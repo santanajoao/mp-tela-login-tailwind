@@ -14,7 +14,7 @@ export default function CustomLink({
   return (
     <a
       href={href}
-      className={`w-fit text-sm text-gray-400 underline ${className}`}
+      className={`w-fit text-sm text-gray-400 underline hover:text-gray-300 ${className}`}
     >
       {children}
     </a>
