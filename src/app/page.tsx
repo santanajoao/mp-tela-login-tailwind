@@ -1,3 +1,5 @@
+import CustomLink from "@/components/CustomLink";
+
 export default function Home() {
   return (
     <main className="grid h-screen bg-black md:grid-cols-2">
@@ -5,7 +7,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center px-5">
         <div className="flex w-full flex-col sm:w-auto">
           <h1 className="text-center text-4xl font-bold leading-snug text-gray-200 sm:text-5xl">
-            Faça seu{' '}
+            Faça seu{" "}
             <div className="inline-block">
               login
               <div className="ml-1 inline-block h-3 w-3 rounded-full bg-gradient" />
@@ -39,12 +41,9 @@ export default function Home() {
                   />
                 </label>
 
-                <a
-                  href=""
-                  className="mt-5 w-fit self-end text-sm text-gray-400 underline"
-                >
+                <CustomLink href="/forgot" className="mt-5 self-end">
                   Esqueci minha senha
-                </a>
+                </CustomLink>
               </div>
             </div>
 
@@ -53,9 +52,9 @@ export default function Home() {
             </button>
           </form>
 
-          <a href="" className="mt-8 text-sm text-gray-400 underline">
+          <CustomLink href="/signin" className="mt-8">
             Ainda não tenho uma conta
-          </a>
+          </CustomLink>
         </div>
       </div>
 
