@@ -1,7 +1,6 @@
-import React from "react";
-import LabelAndInput from "./LabelAndInput";
-import CustomLink from "./CustomLink";
-import GradientButton from "./GradientButton";
+import LabelAndInput from './LabelAndInput'
+import CustomLink from './CustomLink'
+import GradientButton from './GradientButton'
 
 export default function LoginForm() {
   return (
@@ -24,5 +23,5 @@ export default function LoginForm() {
         Ainda não tenho uma conta
       </CustomLink>
     </form>
-  );
+  )
 }

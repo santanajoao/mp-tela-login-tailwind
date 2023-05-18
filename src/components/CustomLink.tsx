@@ -1,5 +1,7 @@
+import { ReactNode } from 'react'
+
 interface CustomLinkProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   href: string;
 }
@@ -16,5 +18,5 @@ export default function CustomLink({
     >
       {children}
     </a>
-  );
+  )
 }

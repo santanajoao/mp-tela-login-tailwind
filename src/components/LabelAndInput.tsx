@@ -14,5 +14,5 @@ export default function LabelAndInput({ label, id, type }: LabelAndInputProps) {
         className="mt-2 rounded-2xl bg-zinc-900 px-4 py-4 text-base leading-tight"
       />
     </label>
-  );
+  )
 }
