@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        dotGradient:
-          'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)'
+        gradient:
+          'linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)',
+        moutainSky: 'url(/mountains-sky.jpg)'
       }
     },
   },

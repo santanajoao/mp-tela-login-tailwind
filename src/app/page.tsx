@@ -1,45 +1,66 @@
 export default function Home() {
   return (
-    <main className="grid grid-cols-2 bg-black h-screen">
+    <main className="grid h-screen bg-black md:grid-cols-2">
       {/* Left */}
-      <div className="flex flex-col justify-center items-center">
-        <div className=" flex flex-col">
-          <h1 className="text-gray-200 text-5xl font-bold leading-snug text-center">
+      <div className="flex flex-col items-center justify-center px-5">
+        <div className="flex w-full flex-col sm:w-auto">
+          <h1 className="text-center text-4xl font-bold leading-snug text-gray-200 sm:text-5xl">
             Faça seu{' '}
             <div className="inline-block">
               login
-              <div className="ml-1 inline-block bg-dotGradient h-3 w-3 rounded-full" />
+              <div className="ml-1 inline-block h-3 w-3 rounded-full bg-gradient" />
             </div>
           </h1>
-          
+
           <form className="mt-14">
             <div className="space-y-6">
-              <label htmlFor="email" className="text-sm text-gray-400 flex flex-col">
+              <label
+                htmlFor="email"
+                className="flex flex-col text-sm text-gray-400"
+              >
                 Email
-                <input type="email" id="email" className="mt-2 bg-zinc-900 rounded-2xl text-base px-4 py-4 leading-tight" />
+                <input
+                  type="email"
+                  id="email"
+                  className="mt-2 rounded-2xl bg-zinc-900 px-4 py-4 text-base leading-tight"
+                />
               </label>
 
               <div className="flex flex-col">
-                <label htmlFor="password" className="text-sm text-gray-400 flex flex-col">
+                <label
+                  htmlFor="password"
+                  className="flex flex-col text-sm text-gray-400"
+                >
                   Senha
-                  <input type="password" id="password" className="mt-2 bg-zinc-900 rounded-2xl text-base px-4 py-4 leading-tight" />
+                  <input
+                    type="password"
+                    id="password"
+                    className="mt-2 rounded-2xl bg-zinc-900 px-4 py-4 text-base leading-tight"
+                  />
                 </label>
-                
-                <a href="" className="text-gray-400 underline text-sm w-fit self-end mt-5">Esqueci minha senha</a>
+
+                <a
+                  href=""
+                  className="mt-5 w-fit self-end text-sm text-gray-400 underline"
+                >
+                  Esqueci minha senha
+                </a>
               </div>
             </div>
 
-            <button className="bg-dotGradient rounded-2xl text-white font-bold text-2xl py-3 leading-tight mt-9 w-full">Entrar</button>
+            <button className="mt-9 w-full rounded-2xl bg-gradient py-3 text-xl font-bold leading-tight text-white sm:text-2xl">
+              Entrar
+            </button>
           </form>
 
-          <a href="" className="underline text-sm text-gray-400 mt-8">
+          <a href="" className="mt-8 text-sm text-gray-400 underline">
             Ainda não tenho uma conta
           </a>
         </div>
       </div>
 
       {/* Right */}
-      <div className="text-white">right</div>
+      <div className="hidden bg-moutainSky bg-cover bg-center md:block" />
     </main>
-  )
+  );
 }
