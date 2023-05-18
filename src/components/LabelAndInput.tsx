@@ -11,18 +11,18 @@ export default function LabelAndInput({ label, id, type }: LabelAndInputProps) {
         {label}
       </label>
 
-      <div className="relative mt-2 flex justify-center items-center">
+      <div className="relative mt-2 flex items-center justify-center">
         <input
           type={type}
           id={id}
-          className="peer rounded-2xl bg-zinc-900 px-4 py-4 text-base leading-tight text-gray-300 w-full z-10 relative outline-none"
+          className="peer relative z-10 w-full rounded-2xl bg-zinc-900 px-4 py-4 text-base leading-tight text-gray-300 outline-none"
         />
 
         {/* purple blur */}
-        <div className="opacity-0 bg-purple-700 h-full w-full absolute rounded-2xl bottom-0 blur-lg -z-0 peer-focus:opacity-100 transition-opacity duration-200" />
+        <div className="absolute bottom-0 -z-0 h-full w-full rounded-2xl bg-purple-700 opacity-0 blur-lg transition-opacity duration-200 peer-focus:opacity-100" />
 
         {/* gradient "border" */}
-        <div className="opacity-0 h-[102.2%] w-[100.35%] absolute bg-gradient rounded-2xl z-0 peer-focus:opacity-100 transition-opacity duration-200" />
+        <div className="absolute z-0 h-[102.2%] w-[100.35%] rounded-2xl bg-gradient opacity-0 transition-opacity duration-200 peer-focus:opacity-100" />
       </div>
     </div>
   )

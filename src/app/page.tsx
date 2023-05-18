@@ -11,7 +11,7 @@ export default function Home() {
             Faça seu{' '}
             <div className="inline-block">
               login
-              <div className="ml-1 inline-block h-2 w-2 sm:h-3 sm:w-3 rounded-full bg-gradient" />
+              <div className="ml-1 inline-block h-2 w-2 rounded-full bg-gradient sm:h-3 sm:w-3" />
             </div>
           </PageTitle>
 
