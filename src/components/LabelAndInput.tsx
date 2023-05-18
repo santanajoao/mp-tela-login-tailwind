@@ -6,7 +6,7 @@ interface LabelAndInputProps {
 
 export default function LabelAndInput({ label, id, type }: LabelAndInputProps) {
   return (
-    <div className="">
+    <div>
       <label htmlFor={id} className="text-sm text-gray-400">
         {label}
       </label>
@@ -18,8 +18,10 @@ export default function LabelAndInput({ label, id, type }: LabelAndInputProps) {
           className="peer rounded-2xl bg-zinc-900 px-4 py-4 text-base leading-tight text-gray-300 w-full z-10 relative outline-none"
         />
 
+        {/* purple blur */}
         <div className="opacity-0 bg-purple-700 h-full w-full absolute rounded-2xl bottom-0 blur-lg -z-0 peer-focus:opacity-100 transition-opacity duration-200" />
 
+        {/* gradient "border" */}
         <div className="opacity-0 h-[102.2%] w-[100.35%] absolute bg-gradient rounded-2xl z-0 peer-focus:opacity-100 transition-opacity duration-200" />
       </div>
     </div>
