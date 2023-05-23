@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest tests/"
   },
   "dependencies": {
     "@types/node": "20.2.1",
@@ -23,6 +24,10 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.3.0"
   }
